@@ -12,7 +12,6 @@ import { IndianLanguage, EmailAnalysisResult, AppToolMode, ThreatLevel, HistoryR
 import { INDIAN_LANGUAGES, getTranslations } from './languages';
 import { saveHistoryRecord } from './historyStorage';
 import { Shield, Sparkles, AlertCircle, Mail, Link as LinkIcon, Image as ImageIcon, CheckCircle2, ShieldAlert, Radio } from 'lucide-react';
-
 export default function App() {
   // Language State - default to English
   const [selectedLanguage, setSelectedLanguage] = useState<IndianLanguage>(INDIAN_LANGUAGES[0]);
