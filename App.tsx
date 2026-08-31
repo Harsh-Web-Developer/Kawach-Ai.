@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { Header } from './components/Header';
-import { EmailInputForm } from './components/EmailInputForm';
-import { AnalysisResults } from './components/AnalysisResults';
-import { LinkVerifier } from './components/LinkVerifier';
-import { ImageAnalyzer } from './components/ImageAnalyzer';
-import { LanguageSelectorModal } from './components/LanguageSelectorModal';
-import { HistoryModal } from './components/HistoryModal';
-import { EmergencyAlertModal } from './components/EmergencyAlertModal';
-import { CyberHelplineBanner } from './components/CyberHelplineBanner';
+import { Header } from './Header';
+import { EmailInputForm } from './EmailInputForm';
+import { AnalysisResults } from './AnalysisResults';
+import { LinkVerifier } from './LinkVerifier';
+import { ImageAnalyzer } from './ImageAnalyzer';
+import { LanguageSelectorModal } from './LanguageSelectorModal';
+import { HistoryModal } from './HistoryModal';
+import { EmergencyAlertModal } from './EmergencyAlertModal';
+import { CyberHelplineBanner } from './CyberHelplineBanner';
 import { IndianLanguage, EmailAnalysisResult, AppToolMode, ThreatLevel, HistoryRecord } from './types';
-import { INDIAN_LANGUAGES, getTranslations } from './data/languages';
-import { saveHistoryRecord } from './utils/historyStorage';
+import { INDIAN_LANGUAGES, getTranslations } from './languages';
+import { saveHistoryRecord } from './historyStorage';
 import { Shield, Sparkles, AlertCircle, Mail, Link as LinkIcon, Image as ImageIcon, CheckCircle2, ShieldAlert, Radio } from 'lucide-react';
 
 export default function App() {
@@ -378,4 +378,3 @@ export default function App() {
     </div>
   );
 }
-
